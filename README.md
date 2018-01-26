@@ -10,7 +10,7 @@
 [Alex Palma](https://github.com/developingAlex/)
 
 ## External links
-Figma wireframes ([clean](https://www.figma.com/file/EtEpPs4hyG9qDEsYVX7Kif5w/Foxbat-clean-wireframes) & [dev](https://www.figma.com/file/0tRu6eCM4M8QjqD2DJvvh8Tb/Foxbat-project))  |  [Trello task list](https://www.figma.com/file/0tRu6eCM4M8QjqD2DJvvh8Tb/Foxbat-project)  |  Google Drive for team documents | [Initial deployment on netlify](https://foxbatconfigurator.netlify.com) | [Client brief, problem/solution, minutes](https://drive.google.com/drive/folders/14T4ceIIZ0rL_E_hOnDiiVwpA2y0eomX7?usp=sharing)
+Figma wireframes ([clean](https://www.figma.com/file/EtEpPs4hyG9qDEsYVX7Kif5w/Foxbat-clean-wireframes) & [dev](https://www.figma.com/file/0tRu6eCM4M8QjqD2DJvvh8Tb/Foxbat-project))  |  [Trello task list](https://www.figma.com/file/0tRu6eCM4M8QjqD2DJvvh8Tb/Foxbat-project)  |  [Google Drive for team documents](https://drive.google.com/drive/folders/14T4ceIIZ0rL_E_hOnDiiVwpA2y0eomX7) | [Initial deployment on netlify](https://foxbatconfigurator.netlify.com) | [Client brief, problem/solution, minutes](https://drive.google.com/drive/folders/14T4ceIIZ0rL_E_hOnDiiVwpA2y0eomX7?usp=sharing)
 
 ## Contents
 * [The Brief](#the-brief)
@@ -34,6 +34,9 @@ Provide a web app written with the following technologies
 * Express
 * React
 * Node
+
+that solves the problem of there being no streamlined process by which to understand the layout the customer desires.
+Design develop and deploy within three weeks.
 
 ## How to run in development
 If you clone this (or are otherwise running for the first time on your local machine), to run it you have to:
@@ -59,10 +62,10 @@ If you clone this (or are otherwise running for the first time on your local mac
 1. `cd api`
 1. `yarn dev`    
 ### Register a valid user login
-As your mongo database will initially be empty, start with a user login:
-1. go to the check.http file in the backend `api` folder and (in vscode there is an extension you can install called REST client for Visual Studio Code by Huachao Mao) send the request for the POST method that sends user login credentials
-1. Confirm success by sending the GET request to sign-in the user you just created ( you should get a response that includes an authentication token )
-1. Note that if you are going to be sending any of the other requests you find in the check.http file which require authentication you should copy the authentication token from the response you just got and replace the text that appears beside any `Authorization: Bearer` text in that file as the existing text will have been for a different developer and won't match the authentication token that your user was given.
+~~As your mongo database will initially be empty, start with a user login:~~
+1. ~~go to the check.http file in the backend `api` folder and (in vscode there is an extension you can install called REST client for Visual Studio Code by Huachao Mao) send the request for the POST method that sends user login credentials~~
+1. ~~Confirm success by sending the GET request to sign-in the user you just created ( you should get a response that includes an authentication token )~~
+1. ~~Note that if you are going to be sending any of the other requests you find in the check.http file which require authentication you should copy the authentication token from the response you just got and replace the text that appears beside any `Authorization: Bearer` text in that file as the existing text will have been for a different developer and won't match the authentication token that your user was given.~~ **Update:** This is no longer necessary the front end now has functionality to make the appropriate requests to the backend when the user registers for the first time by saving a panel for the first time.
 1. If you got up to here you have your backend server up and running, as well as your mongo database, and you just sent a request to your server to write to the database followed by another to read from the database and send a result back to you.
 ### Seed the data necessary for the site
 1. ~~In your terminal ensure you're still in the backend folder: `cd api`~~
