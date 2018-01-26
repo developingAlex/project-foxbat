@@ -1,0 +1,20 @@
+@host = https://api-lxuniynyef.now.sh
+
+###
+POST {{host}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "user1@mail.com",
+  "password": "password123"
+}
+
+###
+
+POST {{host}}/auth
+Content-Type: application/json
+
+{
+  "email": "user1@mail.com",
+  "password": "password123"
+}
